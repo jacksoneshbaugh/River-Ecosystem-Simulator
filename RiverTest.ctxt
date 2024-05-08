@@ -1,0 +1,31 @@
+#BlueJ class context
+comment0.target=RiverTest
+comment0.text=\n\ Tests\ the\ {@link\ River}\ class's\ functionality.\n\ Generated\ by\ BlueJ.\n\ \n\ @author\ Jackson\ Eshbaugh\n\ @version\ 02/10/2023\n
+comment1.params=
+comment1.target=RiverTest()
+comment1.text=\n\ Creates\ a\ new\ TestRiver\ test\ class\ object.\n
+comment2.params=
+comment2.target=void\ setUp()
+comment2.text=\n\ Sets\ up\ before\ each\ test.\ Called\ before\ each\n\ test\ is\ called.\n
+comment3.params=
+comment3.target=void\ tearDown()
+comment3.text=\n\ Cleans\ up\ after\ each\ test.\ Called\ after\ the\n\ conclusion\ of\ each\ test.\n
+comment4.params=
+comment4.target=void\ testGetLength()
+comment4.text=\n\ Tests\ the\ {@link\ River\#getLength()}\ method.\n\ Does\ the\ following\ 3\ times\:\n\ <ol>\n\ \ <li>Generates\ a\ random\ {@code\ int}\ to\ serve\ as\ the\ river's\ length.</li>\n\ \ <li>Creates\ a\ new\ {@link\ River}\ object\ with\ the\ random\ length.</li>\n\ \ <li>Ensures\ that\ the\ {@link\ River\#getLength()}\ returns\ the\ same\ random\n\ \ \ \ \ \ value\ we\ previously\ generated.</li>\n\ </ol>\n
+comment5.params=
+comment5.target=void\ testNumEmpty()
+comment5.text=\n\ Tests\ the\ {@link\ River\#numEmpty()}\ method\:\n\ <ol>\n\ \ <li>Test\ a\ {@code\ River}\ with\ all\ empty\ slots.</li>\n\ \ <li>Test\ a\ {@code\ River}\ with\ some\ empty\ slots.</li>\n\ \ <li>Test\ a\ {@code\ River}\ with\ no\ empty\ slots.</li>\n\ </ol>\n
+comment6.params=
+comment6.target=void\ testAddRandom()
+comment6.text=\n\ Tests\ the\ {@link\ River\#addRandom(Animal)}\ method\:\n\ <ol>\n\ \ <li>Test\ a\ {@code\ River}\ with\ all\ empty\ slots.</li>\n\ \ <li>Test\ a\ {@code\ River}\ with\ some\ empty\ slots.</li>\n\ \ <li>Test\ a\ {@code\ River}\ with\ no\ empty\ slots.</li>\n\ \ <li>Ensure\ that\ an\ {@code\ Animal}\ added\ will\ not\n\ \ \ \ \ \ move\ until\ the\ next\ cycle.</li>\n\ </ol>\n
+comment7.params=
+comment7.target=void\ testUpdateRiver()
+comment7.text=\n\ Tests\ the\ {@link\ River\#updateRiver()}\ method\:\n\ <ol>\n\ \ <li>Creates\ a\ {@code\ River}\ object\ with\ a\ length\ of\ {@code\ 30}\ and\ adds\ two\ {@link\ Animal}\ objects\ at\ indexes\n\ \ \ \ \ \ {@code\ 7}\ and\ {@code\ 22}\ (setting\ all\ other\ indexes\ to\ {@code\ null}).\ This\ is\ because\ the\ animals\ will\ be\ the\ furthest\ away\ from\ each\ other\ in\ a\ circular\ array\n\ \ \ \ \ \ when\ they\ are\ at\ quartiles\ 1\ and\ 3.</li>\n\ \ <li>Calls\ {@link\ River\#updateRiver()}\ precisely\ 10\ times\ (After\ 5\ years\ (at\ age\ \=\ 5),\ the\ fish\ will\ die\ and\ the\ bear\ will\ continue\ to\ move\ until\ the\ 10th\ ).\n\ \ \ \ \ \ After\ each\ call,\ ensures\ that\ a\ valid\ move\ has\ been\ made\ by\ comparing\ indexes\ of\ each\ animal\ before\ and\ after\ (should\ remain\ on\ the\ interval\n\ \ \ \ \ \ {@code\ (currentIndex\ >\=\ previousIndex\ -\ 1)\ &&\ (currentIndex\ <\=\ previousIndex\ +\ 1)}\ (not\ including\ a\ wraparound\ case)\ since\ only\ moves\ of\ 1\ unit\ are\ allowed).</li>\n\ </ol>\n
+comment8.params=
+comment8.target=void\ testUpdateCell()
+comment8.text=\n\ Tests\ the\ {@link\ River\#updateCell(int)}\ method\:\n\ <ol>\n\ \ <li>Creates\ a\ {@code\ River}\ object\ with\ a\ length\ of\ {@code\ 10}\ and\ adds\ an\ {@link\ Animal}\ object\ (setting\ all\ other\ indexes\ to\ {@code\ null}).</li>\n\ \ <li>Calls\ {@link\ River\#updateCell(int)}\ on\ each\ cell\ and\ ensures\ a\ legal\ move\ was\ taken\:\n\ \ \ \ \ \ <ul>\n\ \ \ \ \ \ \ <li>If\ the\ cell\ is\ {@code\ null},\ no\ action\ should\ have\ been\ taken\ (i.e.,\ {@link\ River\#toString()}\ should\ be\ the\ same\ before\ and\ after.</li>\n\ \ \ \ \ \ \ <li>If\ the\ cell\ is\ populated\ by\ an\ animal\ is\ at\ its\ max\ age,\ the\ cell\ (and\ array\ because\ there\ is\ only\ one\ animal\ here)\ should\ be\ filled\n\ \ \ \ \ \ \ \ \ \ \ with\ {@code\ null}.</li>\n\ \ \ \ \ \ \ <li>Else,\ the\ animal\ should\ move\ at\ most\ one\ unit\ in\ either\ direction.</li>\n\ \ \ \ \ \ </ul>\n\ \ </li>\n\ \ <li>Loops\ the\ above\ step\ for\ a\ total\ of\ {@code\ 10}\ executions,\ to\ ensure\ that\ animal\ death\ is\ accounted\ for.</li>\n\ </ol>\n\ <i>Completion\ of\ this\ test\ implies\ that\ the\ {@code\ River}\ class\ conforms\ to\ Rule\ 1\ in\ \u00A71.1.</i>\n
+comment9.params=
+comment9.target=void\ testProcessMove()
+comment9.text=\n\ Tests\ the\ {@link\ River\#processMove(int,\ int)}\ method\:\n\ <ol>\n\ \ <li><b>Tests\ Rule\ 2</b>\:\ the\ collision\ of\ a\ {@link\ Bear}\ and\ {@link\ Fish}\n\ \ \ \ \ \ (in\ both\ directions).</li>\n\ \ <li><b>Tests\ Rule\ 3</b>\:\ the\ collision\ of\ two\ {@link\ Animal}\ objects\ of\n\ \ \ \ \ \ the\ same\ gender\ and\ the\ same\ species.</li>\n\ \ <li><b>Tests\ Rule\ 4</b>\:\ the\ collision\ of\ two\ animal\ objects\ of\ different\\\n\ \ \ \ \ \ genders\ and\ same\ species\ (i.e.,\ tests\ reproduction)</li>\n\ </ol>\n
+numComments=10

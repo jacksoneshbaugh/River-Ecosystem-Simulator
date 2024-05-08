@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=AnimalList
+comment0.text=\n\ Provides\ the\ structure\ for\ which\ to\ create\ a\n\ list\ of\ multiple\ {@link\ Animal}\ objects,\ which\ can\ grow\ and\ change\n\ in\ size.\n\ \n\ @author\ Jackson\ Eshbaugh\n\ @version\ 02/10/2024\n
+comment1.params=animal
+comment1.target=void\ add(Animal)
+comment1.text=\n\ Appends\ an\ animal\ to\ the\ end\ of\ the\ list.\n\ \n\ @param\ animal\ the\ {@link\ Animal}\ object\ to\ add\ to\ the\ list\n
+comment2.params=animal
+comment2.target=void\ remove(Animal)
+comment2.text=\n\ Searches\ the\ list\ for\ {@code\ animal}\n\ and\ removes\ it\ from\ the\ list,\ if\ found.\n\ \n\ @param\ animal\ the\ {@link\ Animal}\ to\ remove\ from\ the\ list\n
+comment3.params=index
+comment3.target=Animal\ remove(int)
+comment3.text=\n\ Removes\ an\ animal\ from\ the\ list\n\ by\ its\ index.\n\ \n\ @param\ index\ the\ index\ to\ remove\ from\ the\ list\n\ @return\ the\ {@code\ Animal}\ that\ was\ removed\ from\ the\ list\n\ @throws\ IndexOutOfBoundsException\ when\ the\ {@code\ index}\ is\ too\ small\n\ or\ too\ large\n
+comment4.params=index
+comment4.target=Animal\ get(int)
+comment4.text=\n\ Gets\ the\ list\ element\ at\ the\ specifed\ index.\n\ \n\ @throws\ IndexOutOfBoundsException\ when\ the\ index\ is\ not\ in\ the\ boundary\ of\ [0,\ size()\ -1].\n\ @param\ index\ the\ index\ from\ which\ to\ retrieve\ an\ element\n\ @return\ the\ element\ at\ the\ specified\ index\n\ \n
+comment5.params=animal
+comment5.target=int\ find(Animal)
+comment5.text=\n\ Finds\ the\ specified\ {@code\ animal}\ in\ the\ list,\ \n\ and\ returns\ its\ index.\n\ \n\ @param\ animal\ the\ {@link\ Animal}\ to\ find\ in\ the\ list\n\ @return\ the\ index\ of\ {@code\ animal}\ or\ {@code\ -1}\ if\ {@code\ animal}\n\ was\ not\ found\n
+comment6.params=
+comment6.target=void\ clear()
+comment6.text=\n\ Clears\ the\ list,\ returning\ it\ to\ its\n\ default,\ empty\ state.\n
+comment7.params=
+comment7.target=int\ size()
+comment7.text=\n\ Gets\ the\ current\ size\ of\ the\ list.\n\ \n\ @return\ the\ current\ size\ of\ the\ list\n
+numComments=8

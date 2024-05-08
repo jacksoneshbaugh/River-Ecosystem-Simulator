@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Fish
+comment0.text=\n\ Models\ a\ fish\ in\ the\ river\ ecosystem.\n\ \n\ @author\ Jackson\ Eshbaugh\n\ @version\ 1/27/2024\n
+comment1.params=
+comment1.target=Fish()
+comment1.text=\n\ Creates\ a\ fish\ of\ random\ age\n\ (within\ a\ fish's\ normal\n\ lifespan)\ and\ random\ gender.\n
+comment2.params=
+comment2.target=boolean\ maxAge()
+comment3.params=
+comment3.target=boolean\ incrAge()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\n\ Renders\ this\ animal\ as\ a\n\ String\ value\ of\ the\ form\n\ {@code\ FGA},\ where\ {@code\ F}\ stands\n\ for\ Fish,\ {@code\ G}\ is\ gender\ and\n\ {@code\ A}\ is\ age.\n\ \n\ @return\ the\ String\ value\ "FGA"\ described\ above.\n
+numComments=5

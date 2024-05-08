@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Bear
+comment0.text=\n\ Models\ a\ bear\ in\ the\ river\ ecosystem.\n\ \n\ @author\ Jackson\ Eshbaugh\n\ @version\ 1/27/2024\n
+comment1.params=
+comment1.target=Bear()
+comment1.text=\n\ Creates\ a\ bear\ of\ random\ age\n\ (within\ a\ bear's\ normal\n\ lifespan)\ and\ random\ gender.\n
+comment2.params=
+comment2.target=boolean\ maxAge()
+comment3.params=
+comment3.target=boolean\ incrAge()
+comment4.params=
+comment4.target=int\ getStrength()
+comment4.text=\n\ Get\ this\ bear's\ strength,\n\ a\ function\ of\ its\ age.\n\ \n\ @return\ The\ strength\ of\ the\ bear,\ an\n\ integer\ value\ from\ 0\ to\ 5.\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\n\ Renders\ this\ animal\ as\ a\n\ String\ value\ of\ the\ form\n\ {@code\ BGA},\ where\ {@code\ B}\ stands\n\ for\ Bear,\ {@code\ G}\ is\ gender\ and\n\ {@code\ A}\ is\ age.\n\ \n\ @return\ the\ String\ value\ "BGA"\ described\ above.\n
+numComments=6

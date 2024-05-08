@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=RiverSimulator
+comment0.text=\n\ Simulates\ evolutions\ of\ river\ ecosystems\n\ containing\ bears\ and\ fish\ repeatedly.\n\ \n\ <i>(Project\ 1\ for\ CS\ 150)</i>\n\ \n\ @author\ Jackson\ Eshbaugh\n\ @version\ 01/28/2024\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ Repeatedly\ simulates\ river\ ecosystem\n\ evolutions\ until\ the\ user\ exits.\n\ \n\ @param\ args\ not\ used.\n
+numComments=2
